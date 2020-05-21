@@ -12,8 +12,8 @@ export default class SearchBar extends React.Component {
           <h1>File Uploader</h1>
         </div>
         <div className="SearchBar__controls">
-          <SearchBox />
-          <FilterOptions />
+          <SearchBox searchTerm={this.props.searchTerm}/>
+          <FilterOptions filterOption={this.props.filterOption}/>
         </div>
       </div>
     );

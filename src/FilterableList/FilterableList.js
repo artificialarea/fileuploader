@@ -4,10 +4,15 @@ import ListItem from '../ListItem/ListItem';
 
 export default class FilterableList extends React.Component {
   render() {
-
-    const list = this.props.files.map((file, index) => 
-      <ListItem {...file} key={index}/>
-    )
+    const { searchTerm, filterOption } = this.props;
+    const list = this.props.files
+      .filter(file => 
+        file.name.toLowerCase().includes(searchTerm.toLowerCase()) 
+        && (filterOption === 'All' || file.status === filterOption)
+      )
+      .map((file, index) => 
+        <ListItem {...file} key={index}/>
+      )
 
     return (
       <div className="FilterableList">
@@ -20,11 +25,3 @@ export default class FilterableList extends React.Component {
 FilterableList.defaultProps = {
   files: []
 }
-
-// files e.g.
-// {
-//   "fileType":"jpg",
-//   "size":"4.3MB",
-//   "name":"me on skis.jpg",
-//   "status":"Synced"
-// }
