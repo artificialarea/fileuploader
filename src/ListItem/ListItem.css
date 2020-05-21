@@ -17,12 +17,13 @@
   border-radius: 50%;
   height: 70px;
   width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ListItem__circle .svg-inline--fa{
   font-size: 2em;
-  margin-top: 25%;
-  margin-left: 32%;
 }
 
 .ListItem__content {
