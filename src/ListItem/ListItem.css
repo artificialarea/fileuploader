@@ -1,0 +1,38 @@
+.ListItem {
+  border: 1px solid grey;
+  border-width: 0 1px 1px 1px;
+  display: flex;
+}
+
+.ListItem:first-of-type {
+  border-width: 1px;
+}
+
+.ListItem__icon{
+  padding: 20px;
+}
+
+.ListItem__circle {
+  border: 2px solid rgb(0, 0, 0, 0.2);
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+.ListItem__circle .svg-inline--fa{
+  font-size: 2em;
+  margin-top: 25%;
+  margin-left: 32%;
+}
+
+.ListItem__content {
+  display: flex;
+  flex-grow: 4;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.ListItem__title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}

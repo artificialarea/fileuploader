@@ -1,0 +1,21 @@
+.SearchBar {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+.SearchBar__controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.SearchBox {
+  align-self: flex-end;
+}

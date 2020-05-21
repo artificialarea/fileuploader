@@ -1,0 +1,13 @@
+.ControlBar {
+  display: flex;
+}
+
+.ControlBar__btn {
+  border: 1px solid grey;
+  border-width: 1px 1px 1px 0;
+  padding: 10px;
+}
+
+.ControlBar__btn:first-of-type {
+  border-width: 1px;
+}

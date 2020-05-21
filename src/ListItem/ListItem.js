@@ -29,10 +29,10 @@ export default class ListItem extends React.Component {
         <div className="ListItem__content">
           <div className="ListItem__heading">
             <div className="ListItem__title">{this.props.name}</div>
-            <div className="ListItem__size">{this.props.size}</div>
+            <div className="ListItem__status">{this.props.status}</div>
           </div>
           <div className="ListItem__actions">
-            <div className="ListItem__status">{this.props.status}</div>
+            <div className="ListItem__size">{this.props.size}</div>
             <ControlBar />
           </div>
         </div>
