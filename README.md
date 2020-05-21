@@ -1,3 +1,11 @@
+## References
+per: https://courses.thinkful.com/react-v1/checkpoint/12
+
+repo guide: https://github.com/Thinkful-Ed/react-fileuploader
+
+<br><br><hr />
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
