@@ -3,5 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
+// per: https://courses.thinkful.com/react-v1/checkpoint/12
+// reference repo: https://github.com/Thinkful-Ed/react-fileuploader
+
+// test data
+const FILES = [
+  {"fileType":"jpg","size":"4.3MB","name":"me on skis.jpg","status":"Synced"},
+  {"fileType":"mov","size":"1.3GB","name":"cats falling.mov","status":"Uploaded"},
+  {"fileType":"txt","size":"0.9KB","name":"My December expenses.txt","status":"Uploaded"},
+  {"fileType":"mp3","size":"3.4MB","name":"disturbed_sound_of_silence.mp3","status":"New"},
+];
 
 ReactDOM.render(<App files={FILES}/>, document.getElementById('root'));

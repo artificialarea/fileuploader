@@ -1,0 +1,9 @@
+.FilterOptions,
+.FilterOptions__option {
+  display: inline-block;
+}
+
+.FilterOptions label {
+  margin-top: 10px;
+  padding: 10px;
+}

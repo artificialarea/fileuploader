@@ -1,12 +1,16 @@
 import React from 'react';
+import './App.css';
+import SearchBar from './SearchBar/SearchBar';
+import FilterableList from './FilterableList/FilterableList';
 
-// per: https://courses.thinkful.com/react-v1/checkpoint/12
-// reference repo: https://github.com/Thinkful-Ed/react-fileuploader
 
-export default function App() {
-  return (
-    <main className="App">
-      
-    </main>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <main className="App">
+        <SearchBar />
+        <FilterableList files={this.props.files} />
+      </main>
+    );
+  }
 }

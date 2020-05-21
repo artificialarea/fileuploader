@@ -9,7 +9,7 @@ import {
 
 
 export default class ControlBar extends React.Component {
-  renders() {
+  render() {
     return (
       <div className="ControlBar">
         <div className="ControlBar__btn"><FontAwesomeIcon icon={faRedoAlt}/></div>
