@@ -9,7 +9,11 @@ export default class SearchBox extends React.Component {
     return (
       <div className="SearchBox">
         <FontAwesomeIcon icon={faSearch}/>
-        <input placeholder="Search term" value={this.props.searchTerm}/>
+        <input 
+          placeholder="Search term" 
+          value={this.props.searchTerm}
+          onChange={event => this.props.handleUpdate(event.target.value)}
+        />
       </div>
     )
   }
