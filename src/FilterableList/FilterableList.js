@@ -11,9 +11,11 @@ export default class FilterableList extends React.Component {
         && (filterOption === 'All' || file.status === filterOption)
       )
       .map((file, index) => 
+        // use spread operator {...file} 
+        // to pass all the file props without having to write them out explicitly
         <ListItem {...file} key={index}/>
       )
-
+    console.log(list)
     return (
       <div className="FilterableList">
         {list}
